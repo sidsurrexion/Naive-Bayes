@@ -1,0 +1,43 @@
+Read Me File:
+
+1. The Naive Bayes classfication is carried out in the driver program called NaiveBayesDriver.java.
+
+2. Similarly to execute the Logistic Regression program, the driver program LogisticDriver.java is
+called.
+
+3. On running the naive bayes file, user is asked to enter the laplace constant. Since the laplace
+constant is considered here as integer, an integer is supposed to be provided.
+
+4. Similarly, in case of Logistic file execution, user is asked to enter the three values. First value
+is the number of iteration required for Gradient Descent, second is the regularization factor(lambda) and
+the third is learning rate. First value is an integer, second value is an integer and the third value is a
+double. User can put spacebar between each written value and can push enter once all the values 
+have been put. In case user does not provide a value and enters then the default values for
+all these inputs shall be taken.
+
+5. The training and test folders have been kept in the program directory itself. In case new files
+are to be added in the training folders then they can be added in the ham and spam folders.
+Program has a set up in which it reads the directory and traverses through each file. 
+[Note: Eclipse and 'Java through CMD' recognize different folders as home folder. Hence because of
+this reason I have placed the training and test files inside the src directory as well.] 
+
+6. Program computes the accuracy without stop words removal and after stop words removal on
+one execution. The result has been posted in the report file.
+
+7. Commands of execution:
+C:\Users\Snow_Leopard\workspace\TextClassification\src>javac NaiveBayesDriver.java
+C:\Users\Snow_Leopard\workspace\TextClassification\src>java NaiveBayesDriver
+
+Enter the digit for Laplace Smoothing: 
+
+1
+
+(Input for the Naive Bayes Classification)
+
+C:\Users\Snow_Leopard\workspace\TextClassification\src>javac LogisticDriver.java 
+C:\Users\Snow_Leopard\workspace\TextClassification\src>java LogisticDriver
+
+Enter the number of iterations, regularization factor and the learning rate
+20 10 0.01
+
+(Input for the Logistic Regression)
